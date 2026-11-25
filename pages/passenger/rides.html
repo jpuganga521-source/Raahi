@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f7fb" />
+    <title>My rides — Raahi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/passenger.css" />
+    <script src="../../js/passenger.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Passenger navigation">
+        <a class="brand" href="../../index.html" aria-label="Raahi home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M7 23.5 13.2 8l5.2 11.4 3.1-7.2L27 23.5" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7" cy="24" r="2" fill="currentColor"/><circle cx="27" cy="24" r="2" fill="currentColor"/></svg></span><span>raahi<span class="brand-period">.</span></span></a>
+        <p class="nav-label">YOUR ACCOUNT</p>
+        <nav class="primary-nav">
+          <a class="nav-link" href="dashboard.html"><span class="nav-icon" aria-hidden="true">⌖</span> Book a ride</a>
+          <a class="nav-link active" href="rides.html" aria-current="page"><span class="nav-icon" aria-hidden="true">↗</span> My rides</a>
+          <a class="nav-link" href="profile.html"><span class="nav-icon" aria-hidden="true">◉</span> My profile</a>
+          <a class="nav-link" href="support.html"><span class="nav-icon" aria-hidden="true">?</span> Help &amp; support</a>
+        </nav>
+        <div class="sidebar-spacer"></div>
+        <div class="help-card"><div class="help-icon" aria-hidden="true">?</div><strong>Need a hand?</strong><p>We're here whenever you need us.</p><a class="text-button" href="support.html">Visit help center <span aria-hidden="true">→</span></a></div>
+        <a class="profile-button profile-link" href="profile.html"><span class="avatar avatar-user">AS</span><span class="profile-copy"><strong>Arjun Sharma</strong><small>Personal account</small></span><span class="profile-menu" aria-hidden="true">···</span></a>
+      </aside>
+      <main class="main-content">
+        <header class="topbar"><div class="breadcrumb"><a href="dashboard.html">Passenger</a><span class="crumb-slash">/</span><strong>My rides</strong></div><div class="topbar-actions"><span class="service-indicator"><span class="live-dot"></span> All systems normal</span><span class="avatar avatar-user top-avatar">AS</span></div></header>
+        <div class="view active passenger-page">
+          <div class="page-heading"><div><p class="eyebrow">YOUR JOURNEYS</p><h1>My rides</h1><p class="page-subtitle">Keep track of where you've been and where you're headed.</p></div><a class="primary-button" href="dashboard.html">Book a ride <span aria-hidden="true">→</span></a></div>
+          <section class="active-trip card" id="active-trip">
+            <div class="active-trip-main">
+              <div class="section-title-row"><div><p class="eyebrow">YOUR UPCOMING RIDE</p><h2>On the way to you</h2></div><span class="status status-in-progress" id="active-ride-status"><span class="status-dot"></span> Rider arriving</span></div>
+              <div class="trip-route"><div class="trip-location"><span class="route-origin"></span><span><small>PICKUP</small><strong>Connaught Place, New Delhi</strong></span></div><div class="trip-route-line"></div><div class="trip-location"><span class="route-destination"></span><span><small>DROP-OFF</small><strong>India Gate, New Delhi</strong></span></div></div>
+              <div class="trip-rider"><span class="trip-rider-avatar">VS</span><span class="trip-rider-copy"><strong>Vikram Singh <span class="verified-badge">✓ Verified</span></strong><small>Honda Activa · DL 8S AB 4821</small><small class="trip-rating">★ 4.9 <span>· Your rider</span></small></span><strong class="trip-fare">₹86 <small>Estimated fare</small></strong></div>
+              <div class="trip-actions"><button class="secondary-button" type="button" data-passenger-action="call">Call rider</button><button class="secondary-button" type="button" data-passenger-action="cancel">Cancel ride</button><a class="secondary-button" href="support.html">Get help</a></div>
+              <p class="demo-disclaimer">Demo ride · Rider details and trip status are sample data.</p>
+            </div>
+            <div class="trip-map" aria-label="Illustrative map preview"><div class="trip-map-block map-block-one"></div><div class="trip-map-block map-block-two"></div><div class="trip-map-block map-block-three"></div><div class="trip-map-road trip-map-road-a"></div><div class="trip-map-road trip-map-road-b"></div><div class="trip-map-road trip-map-road-c"></div><svg viewBox="0 0 380 280" preserveAspectRatio="none" aria-hidden="true"><path class="trip-map-path" d="M55 223 C97 205 114 154 164 161 S231 205 250 144 S302 92 333 68"/></svg><span class="trip-map-pin trip-pin-pickup">⌖</span><span class="trip-map-pin trip-pin-destination">⌖</span><span class="trip-map-bike">🏍️</span><span class="trip-map-caption"><span class="live-dot"></span> Map preview</span></div>
+          </section>
+          <section class="ride-history card">
+            <div class="section-title-row"><div><p class="eyebrow">YOUR ACTIVITY</p><h2>Ride history</h2></div><span class="small-muted">3 sample rides</span></div>
+            <div class="ride-filters" role="group" aria-label="Filter rides"><button class="ride-filter active" type="button" data-filter="all" aria-pressed="true">All rides <span>3</span></button><button class="ride-filter" type="button" data-filter="completed" aria-pressed="false">Completed <span>2</span></button><button class="ride-filter" type="button" data-filter="cancelled" aria-pressed="false">Cancelled <span>1</span></button></div>
+            <div class="history-list" id="history-list">
+              <article class="history-item" data-status="completed"><span class="history-vehicle">🏍️</span><span class="history-route-copy"><strong>Connaught Place <span aria-hidden="true">→</span> Karol Bagh</strong><small>Today · 10:42 AM · Bike · Ride #R-891</small></span><span class="history-result"><strong>₹148</strong><small class="history-complete">Completed</small></span><a class="history-help" href="support.html">Help</a></article>
+              <article class="history-item" data-status="completed"><span class="history-vehicle">🛺</span><span class="history-route-copy"><strong>Rajinder Nagar <span aria-hidden="true">→</span> Patel Nagar</strong><small>Yesterday · 9:18 AM · Auto · Ride #R-876</small></span><span class="history-result"><strong>₹92</strong><small class="history-complete">Completed</small></span><a class="history-help" href="support.html">Help</a></article>
+              <article class="history-item" data-status="cancelled"><span class="history-vehicle">🚕</span><span class="history-route-copy"><strong>India Gate <span aria-hidden="true">→</span> Hauz Khas</strong><small>Nov 8 · 6:35 PM · Cab · Ride #R-862</small></span><span class="history-result"><strong>₹0</strong><small class="history-cancelled">Cancelled</small></span><a class="history-help" href="support.html">Help</a></article>
+              <p class="empty-rides" id="empty-rides" hidden>No rides in this category yet.</p>
+            </div>
+          </section>
+        </div>
+        <footer class="page-footer"><span>© 2026 Raahi Mobility</span><span>Made for the way India moves <span class="footer-heart">♥</span></span></footer>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

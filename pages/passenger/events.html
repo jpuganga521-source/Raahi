@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f8fc" />
+    <title>Wedding &amp; event transport — Raahi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/public.css" />
+    <link rel="stylesheet" href="../../css/events.css" />
+    <script src="../../js/events.js" defer></script>
+  </head>
+  <body class="event-booking-page">
+    <header class="site-header event-header">
+      <a class="brand" href="../../index.html" aria-label="Raahi home"><span class="brand-mark" aria-hidden="true">R</span><span>raahi<span class="brand-period">.</span></span></a>
+      <nav class="site-nav event-nav" aria-label="Event booking navigation"><a href="../../index.html#events">Home</a><a href="#event-request">Plan an event</a><a href="#my-event-requests">My requests</a></nav>
+      <a class="button button-small button-outline" href="../admin/events.html">Admin demo</a>
+    </header>
+
+    <main class="event-shell">
+      <section class="event-intro">
+        <p class="eyebrow">WEDDINGS · BARAAT · TILAK · FAMILY FUNCTIONS</p>
+        <h1>Make room for <span>everyone.</span></h1>
+        <p>Request one vehicle or a whole fleet. Share what you need and the Raahi team will check availability and send a custom quotation.</p>
+        <div class="event-process"><span><b>01</b> Share your plan</span><span><b>02</b> Get a custom quote</span><span><b>03</b> Confirm your booking</span></div>
+      </section>
+
+      <div class="event-layout">
+        <form class="event-form event-card" id="event-booking-form">
+          <div class="event-card-heading"><div><p class="eyebrow">YOUR EVENT</p><h2>Request a vehicle package</h2></div><span class="sample-indicator">NO UPFRONT PRICE</span></div>
+          <p class="event-form-note">Tell us your requirements. This request is not a confirmed booking; our team will review availability first.</p>
+
+          <fieldset>
+            <legend>Contact details</legend>
+            <div class="event-form-grid">
+              <label class="event-field">Your name<input name="customerName" type="text" autocomplete="name" placeholder="Full name" required /></label>
+              <label class="event-field">Mobile number<input name="phone" type="tel" autocomplete="tel" inputmode="tel" minlength="10" maxlength="18" placeholder="10-digit mobile number" required /></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Event details</legend>
+            <div class="event-form-grid">
+              <label class="event-field">Event type<select name="eventType" required><option value="" selected disabled>Choose event type</option><option>Wedding</option><option>Baraat</option><option>Tilak ceremony</option><option>Reception</option><option>Engagement</option><option>Family function</option><option>Other</option></select></label>
+              <label class="event-field">Event date<input name="eventDate" type="date" required /></label>
+              <label class="event-field">Start time<input name="startTime" type="time" required /></label>
+              <label class="event-field">Event duration<select name="duration" required><option value="" selected disabled>Select duration</option><option value="2">Up to 2 hours</option><option value="4">Up to 4 hours</option><option value="6">Up to 6 hours</option><option value="8">Up to 8 hours</option><option value="12">More than 8 hours</option></select></label>
+              <label class="event-field">Pickup location<input name="pickup" type="text" placeholder="Where should vehicles arrive?" required /></label>
+              <label class="event-field">Destination<input name="destination" type="text" placeholder="Where are you going?" required /></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Vehicles you need</legend>
+            <p class="event-field-help">Add each vehicle type and the quantity you need. For example, 15 sedans.</p>
+            <div class="vehicle-request-list" id="vehicle-request-list">
+              <div class="vehicle-request-row">
+                <label class="event-field">Vehicle type<select name="vehicleType" required><option value="Bike">Bike</option><option value="Auto">Auto</option><option value="Hatchback">Hatchback</option><option value="Sedan" selected>Sedan</option><option value="SUV">SUV</option><option value="Luxury car">Luxury car</option><option value="Pickup">Pickup</option><option value="Traveller">Traveller</option><option value="Bus">Bus</option></select></label>
+                <label class="event-field">Quantity<input name="vehicleQuantity" type="number" min="1" step="1" value="1" required /></label>
+                <button class="remove-vehicle" type="button" aria-label="Remove vehicle type" disabled>×</button>
+              </div>
+            </div>
+            <button class="add-vehicle-button" id="add-vehicle" type="button">＋ Add another vehicle type</button>
+          </fieldset>
+
+          <fieldset>
+            <legend>Anything else we should know?</legend>
+            <label class="event-field">Special requirements<textarea name="requirements" rows="4" placeholder="For example: vehicles should arrive together, or please suggest alternatives if a type is unavailable."></textarea></label>
+          </fieldset>
+
+          <div class="event-submit-row"><p class="event-feedback" id="event-form-feedback" role="status" hidden></p><button class="button button-primary" type="submit">Send booking request <span aria-hidden="true">→</span></button></div>
+          <p class="event-demo-note">Frontend demo only. Your request is saved in this browser; no message or payment is sent.</p>
+        </form>
+
+        <aside class="event-side">
+          <section class="event-card quote-info"><span class="event-side-icon">₹</span><p class="eyebrow">CUSTOM QUOTATION</p><h2>Price after availability check</h2><p>We don't show a fixed package price. An admin reviews your vehicle list and sends a quote for your event.</p><div class="quote-step"><span>1</span><p><strong>We review your request</strong><small>Vehicles, date and route</small></p></div><div class="quote-step"><span>2</span><p><strong>You receive a quote</strong><small>Including available alternatives</small></p></div><div class="quote-step"><span>3</span><p><strong>You decide</strong><small>Accept or decline the quote</small></p></div></section>
+          <section class="event-card event-status-legend"><p class="eyebrow">BOOKING STATUS</p><h2>Track your request</h2><p>Your request appears below after submission. A quote is not a confirmed booking until you accept it.</p><a class="text-link" href="#my-event-requests">View my requests <span aria-hidden="true">↓</span></a></section>
+        </aside>
+      </div>
+
+      <section class="my-event-requests" id="my-event-requests">
+        <div class="event-card-heading"><div><p class="eyebrow">YOUR EVENT TRANSPORT</p><h2>My event requests</h2></div><span class="sample-indicator">THIS BROWSER ONLY</span></div>
+        <p class="event-form-note">Requests and quotations shown here are stored locally for this frontend demo.</p>
+        <div class="event-request-list" id="event-request-list" aria-live="polite"></div>
+      </section>
+    </main>
+    <footer class="event-footer"><a href="../../index.html">← Back to Raahi home</a><span>Raahi · Frontend demo</span></footer>
+  </body>
+</html>

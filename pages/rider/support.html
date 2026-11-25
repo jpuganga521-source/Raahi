@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f7fb" />
+    <title>Rider support — Raahi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/rider.css" />
+    <script src="../../js/rider.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Rider navigation">
+        <a class="brand" href="../../index.html" aria-label="Raahi home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M7 23.5 13.2 8l5.2 11.4 3.1-7.2L27 23.5" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7" cy="24" r="2" fill="currentColor"/><circle cx="27" cy="24" r="2" fill="currentColor"/></svg></span><span>raahi<span class="brand-period">.</span></span></a>
+        <p class="nav-label">RIDER WORKSPACE</p>
+        <nav class="primary-nav">
+          <a class="nav-link" href="dashboard.html"><span class="nav-icon">▦</span> Overview</a><a class="nav-link" href="requests.html"><span class="nav-icon">⌖</span> Ride requests <span class="nav-count">2</span></a><a class="nav-link" href="active-ride.html"><span class="nav-icon">↗</span> Active ride</a><a class="nav-link" href="earnings.html"><span class="nav-icon">₹</span> Earnings</a><a class="nav-link active" href="support.html" aria-current="page"><span class="nav-icon">?</span> Rider support</a>
+        </nav>
+        <div class="sidebar-spacer"></div><div class="help-card"><div class="help-icon">?</div><strong>On the road?</strong><p>Support is here if you need a hand.</p><a class="text-button" href="#rider-support-form">Contact support <span>→</span></a></div>
+        <a class="profile-button profile-link" href="registration.html"><span class="avatar rider-avatar">VS</span><span class="profile-copy"><strong>Vikram Singh</strong><small>Verified rider</small></span></a>
+      </aside>
+      <main class="main-content">
+        <header class="topbar"><div class="breadcrumb"><a href="dashboard.html">Rider workspace</a><span class="crumb-slash">/</span><strong>Rider support</strong></div><div class="topbar-actions"><span class="service-indicator"><span class="live-dot"></span> All systems normal</span><span class="avatar rider-avatar top-avatar">VS</span></div></header>
+        <div class="view active rider-page">
+          <div class="page-heading"><div><p class="eyebrow">WE'RE HERE FOR YOU</p><h1>Rider support</h1><p class="page-subtitle">Your concern matters. Tell us what happened and we'll listen.</p></div><span class="support-availability"><span class="live-dot"></span> Support available 24/7</span></div>
+          <div class="rider-support-layout">
+            <div class="rider-support-main">
+              <section class="card rider-support-form-card" id="rider-support-form">
+                <div class="section-title-row"><div><p class="eyebrow">RIDER CARE</p><h2>Report an issue</h2></div><span class="support-form-icon">✉</span></div>
+                <p class="support-intro">Passenger and rider reports are handled with care and reviewed fairly.</p>
+                <form id="rider-ticket-form" class="rider-form">
+                  <label>What do you need help with?<select name="issue" required><option value="" selected disabled>Select an issue</option><option>Payment or earnings issue</option><option>Passenger behaviour</option><option>Ride dispute</option><option>Account or verification</option><option>Safety concern</option><option>Something else</option></select></label>
+                  <label>Related ride<select name="ride"><option value="none">Not about a specific ride</option><option value="R-891">Ride #R-891 · Connaught Place → Karol Bagh</option><option value="R-876">Ride #R-876 · Rajinder Nagar → Patel Nagar</option></select></label>
+                  <label>Tell us what happened<textarea name="details" rows="4" placeholder="Share the details that will help us understand your concern." required minlength="10"></textarea></label>
+                  <label class="rider-upload-label">Add supporting file <span>Optional · Image or document</span><input name="attachment" type="file" accept="image/*,.pdf" /></label>
+                  <p class="rider-form-message" id="rider-ticket-feedback" role="status" hidden></p>
+                  <button class="primary-button" type="submit">Submit to support <span aria-hidden="true">→</span></button>
+                  <p class="demo-disclaimer">Demo only: this request is shown in this page and is not sent to an admin.</p>
+                </form>
+              </section>
+              <section class="card rider-ticket-card"><div class="section-title-row"><div><p class="eyebrow">YOUR REQUESTS</p><h2>Recent support requests</h2></div><span class="small-muted" id="rider-ticket-count">1 request</span></div><div id="rider-tickets"><article class="rider-ticket-row"><span class="rider-ticket-icon">₹</span><span><strong>Payment adjustment question</strong><small>#RS-1048 · Ride #R-876 · Nov 10</small></span><span class="status status-investigating">In review</span></article></div></section>
+            </div>
+            <aside class="rider-support-aside">
+              <section class="card rider-fairness-card"><span class="safety-card-icon">⚖</span><p class="eyebrow">A FAIR REVIEW</p><h2>Both sides deserve to be heard.</h2><p>If a concern involves a passenger, include the ride details. The admin support team can review both accounts and the trip context.</p><a href="../../pages/passenger/support.html">Passenger support flow <span aria-hidden="true">↗</span></a></section>
+              <section class="card rider-help-topics"><p class="eyebrow">COMMON TOPICS</p><h2>We can help with</h2><div><span>₹</span><strong>Earnings &amp; payments</strong></div><div><span>◈</span><strong>Passenger concerns</strong></div><div><span>⌑</span><strong>Safety on a trip</strong></div><div><span>▦</span><strong>Account &amp; documents</strong></div></section>
+            </aside>
+          </div>
+        </div>
+        <footer class="page-footer"><span>© 2026 Raahi Mobility</span><span>Ride safe, ride easy <span class="footer-heart">♥</span></span></footer>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

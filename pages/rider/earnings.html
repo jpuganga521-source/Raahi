@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f7fb" />
+    <title>Rider earnings — Raahi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/rider.css" />
+    <script src="../../js/rider.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Rider navigation">
+        <a class="brand" href="../../index.html" aria-label="Raahi home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M7 23.5 13.2 8l5.2 11.4 3.1-7.2L27 23.5" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7" cy="24" r="2" fill="currentColor"/><circle cx="27" cy="24" r="2" fill="currentColor"/></svg></span><span>raahi<span class="brand-period">.</span></span></a>
+        <p class="nav-label">RIDER WORKSPACE</p>
+        <nav class="primary-nav">
+          <a class="nav-link" href="dashboard.html"><span class="nav-icon">▦</span> Overview</a><a class="nav-link" href="requests.html"><span class="nav-icon">⌖</span> Ride requests <span class="nav-count">2</span></a><a class="nav-link" href="active-ride.html"><span class="nav-icon">↗</span> Active ride</a><a class="nav-link active" href="earnings.html" aria-current="page"><span class="nav-icon">₹</span> Earnings</a><a class="nav-link" href="support.html"><span class="nav-icon">?</span> Rider support</a>
+        </nav>
+        <div class="sidebar-spacer"></div><div class="help-card"><div class="help-icon">?</div><strong>On the road?</strong><p>Support is here if you need a hand.</p><a class="text-button" href="support.html">Contact support <span>→</span></a></div>
+        <a class="profile-button profile-link" href="registration.html"><span class="avatar rider-avatar">VS</span><span class="profile-copy"><strong>Vikram Singh</strong><small>Verified rider</small></span></a>
+      </aside>
+      <main class="main-content">
+        <header class="topbar"><div class="breadcrumb"><a href="dashboard.html">Rider workspace</a><span class="crumb-slash">/</span><strong>Earnings</strong></div><div class="topbar-actions"><span class="service-indicator"><span class="live-dot"></span> All systems normal</span><span class="avatar rider-avatar top-avatar">VS</span></div></header>
+        <div class="view active rider-page">
+          <div class="page-heading"><div><p class="eyebrow">YOUR WORK, YOUR EARNINGS</p><h1>Earnings</h1><p class="page-subtitle">A clear look at your ride activity and sample earnings.</p></div><span class="demo-period-label">DEMO SUMMARY</span></div>
+          <div class="earnings-summary-grid">
+            <article class="card earnings-summary-card earnings-total"><span class="stat-label">THIS WEEK</span><strong id="earnings-total">₹7,840</strong><small><span class="earnings-up">↑ 8.4%</span> compared to last week</small><span class="earnings-summary-icon">₹</span></article>
+            <article class="card earnings-summary-card"><span class="stat-label">COMPLETED RIDES</span><strong id="earnings-rides">42</strong><small>Across your selected period</small><span class="earnings-summary-icon rides-summary-icon">⌖</span></article>
+            <article class="card earnings-summary-card"><span class="stat-label">AVERAGE PER RIDE</span><strong id="earnings-average">₹187</strong><small>Before any adjustments</small><span class="earnings-summary-icon average-summary-icon">↗</span></article>
+          </div>
+          <section class="card earnings-chart-card">
+            <div class="section-title-row"><div><p class="eyebrow">YOUR EARNINGS</p><h2>Ride by ride</h2></div><div class="period-tabs" role="group" aria-label="Earnings period"><button class="period-tab" type="button" data-period="week" aria-pressed="false">Week</button><button class="period-tab active" type="button" data-period="month" aria-pressed="true">Month</button><button class="period-tab" type="button" data-period="year" aria-pressed="false">Year</button></div></div>
+            <div class="chart-summary"><strong id="chart-total">₹7,840</strong><span>Sample total for this period</span></div>
+            <div class="earnings-chart" role="img" aria-label="Illustrative bar chart of earnings"><div class="chart-gridline gridline-one"><span>₹2k</span></div><div class="chart-gridline gridline-two"><span>₹1k</span></div><div class="chart-gridline gridline-three"><span>₹0</span></div><div class="chart-bars" id="chart-bars"><span style="--bar-height:44%" data-label="Mon"><i></i><small>Mon</small></span><span style="--bar-height:68%" data-label="Tue"><i></i><small>Tue</small></span><span style="--bar-height:53%" data-label="Wed"><i></i><small>Wed</small></span><span style="--bar-height:84%" data-label="Thu"><i></i><small>Thu</small></span><span style="--bar-height:60%" data-label="Fri"><i></i><small>Fri</small></span><span style="--bar-height:95%" data-label="Sat"><i></i><small>Sat</small></span><span style="--bar-height:49%" data-label="Sun"><i></i><small>Sun</small></span></div></div>
+            <p class="demo-disclaimer">Illustrative data only. This is not a payout statement.</p>
+          </section>
+          <section class="card payout-card"><span class="payout-icon">↗</span><span><strong>Payout details</strong><small>Your payment method and payout history will appear here when connected.</small></span><button class="secondary-button" type="button" data-rider-toast="Payout settings aren't connected in this demo.">Manage payouts</button></section>
+          <section class="card earnings-history"><div class="section-title-row"><div><p class="eyebrow">RECENT TRIPS</p><h2>Ride earnings</h2></div><span class="small-muted">Sample rides</span></div><div class="earnings-row"><span class="earnings-ride-icon">🏍️</span><span><strong>Connaught Place → Karol Bagh</strong><small>Today · 10:42 AM · Ride #R-891</small></span><strong class="earnings-amount">+ ₹148</strong></div><div class="earnings-row"><span class="earnings-ride-icon">🛺</span><span><strong>Rajinder Nagar → Patel Nagar</strong><small>Today · 9:18 AM · Ride #R-876</small></span><strong class="earnings-amount">+ ₹92</strong></div><div class="earnings-row"><span class="earnings-ride-icon">🚕</span><span><strong>India Gate → Hauz Khas</strong><small>Yesterday · 6:35 PM · Ride #R-862</small></span><strong class="earnings-amount">+ ₹226</strong></div></section>
+        </div>
+        <footer class="page-footer"><span>© 2026 Raahi Mobility</span><span>Ride safe, ride easy <span class="footer-heart">♥</span></span></footer>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

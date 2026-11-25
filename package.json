@@ -1,0 +1,26 @@
+{
+  "name": "raahi",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Raahi ride-booking frontend and backend API",
+  "scripts": {
+    "dev": "node src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "db:migrate": "node src/migrate.ts",
+    "db:setup": "node src/setup-db.ts",
+    "test": "npm run build && node --test dist/app.test.js"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "mysql2": "^3.24.6",
+    "twilio": "^5.10.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}

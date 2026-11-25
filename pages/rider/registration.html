@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f7fb" />
+    <title>Rider registration — Raahi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/rider.css" />
+    <script src="../../js/rider.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Rider navigation">
+        <a class="brand" href="../../index.html" aria-label="Raahi home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M7 23.5 13.2 8l5.2 11.4 3.1-7.2L27 23.5" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7" cy="24" r="2" fill="currentColor"/><circle cx="27" cy="24" r="2" fill="currentColor"/></svg></span><span>raahi<span class="brand-period">.</span></span></a>
+        <p class="nav-label">RIDER WORKSPACE</p>
+        <nav class="primary-nav">
+          <a class="nav-link" href="dashboard.html"><span class="nav-icon">▦</span> Overview</a><a class="nav-link" href="requests.html"><span class="nav-icon">⌖</span> Ride requests <span class="nav-count">2</span></a><a class="nav-link" href="active-ride.html"><span class="nav-icon">↗</span> Active ride</a><a class="nav-link" href="earnings.html"><span class="nav-icon">₹</span> Earnings</a><a class="nav-link" href="support.html"><span class="nav-icon">?</span> Rider support</a>
+        </nav>
+        <div class="sidebar-spacer"></div><div class="help-card"><div class="help-icon">?</div><strong>Need a hand?</strong><p>Our team can help with your rider account.</p><a class="text-button" href="support.html">Contact support <span>→</span></a></div>
+        <a class="profile-button profile-link" href="registration.html"><span class="avatar rider-avatar">VS</span><span class="profile-copy"><strong>Vikram Singh</strong><small>Verified rider</small></span></a>
+      </aside>
+      <main class="main-content">
+        <header class="topbar"><div class="breadcrumb"><a href="dashboard.html">Rider workspace</a><span class="crumb-slash">/</span><strong>Rider profile</strong></div><div class="topbar-actions"><span class="service-indicator"><span class="live-dot"></span> All systems normal</span><span class="avatar rider-avatar top-avatar">VS</span></div></header>
+        <div class="view active rider-page">
+          <div class="page-heading"><div><p class="eyebrow">WELCOME TO THE RIDER COMMUNITY</p><h1>Rider profile &amp; documents</h1><p class="page-subtitle">Keep your contact and vehicle details current.</p></div><span class="status status-approved">✓ Verified demo account</span></div>
+          <section class="verification-banner"><span class="verification-symbol">✓</span><span><strong>Demo profile approved</strong><small>Verification status is illustrative. Document review is not connected.</small></span><span class="verification-tag">SAMPLE</span></section>
+          <div class="registration-layout">
+            <section class="card rider-registration-card"><div class="section-title-row"><div><p class="eyebrow">YOUR INFORMATION</p><h2>Rider details</h2></div><span class="small-muted">Frontend demo</span></div>
+              <form id="rider-registration-form" class="rider-form">
+                <div class="rider-form-grid"><label>Full name<input name="name" type="text" value="Vikram Singh" autocomplete="name" required /></label><label>Mobile number<input name="phone" type="tel" value="+91 98765 43210" autocomplete="tel" required /></label><label>Email address<input name="email" type="email" value="vikram@example.com" autocomplete="email" required /></label><label>Vehicle type<select name="vehicle" required><option>Bike</option><option>Auto</option><option>Cab</option><option>E-rickshaw</option><option>Goods pickup</option></select></label><label>Vehicle registration<input name="registration" type="text" value="DL 8S AB 4821" required /></label><label>Driving licence number<input name="licence" type="text" placeholder="Enter licence number" required /></label><label>Bank / UPI payout detail<input name="payout" type="text" placeholder="UPI ID or bank account (demo)" required /></label><label>Profile photo<input name="photo" type="file" accept="image/*" /></label><label class="rider-upload-label">Driving licence document<span>Image or PDF · Demo upload only</span><input name="licenceDocument" type="file" accept="image/*,.pdf" /></label><label class="rider-upload-label">Vehicle document<span>Image or PDF · Demo upload only</span><input name="vehicleDocument" type="file" accept="image/*,.pdf" /></label></div>
+                <p class="rider-form-message" id="registration-feedback" role="status" hidden></p>
+                <div class="registration-actions"><p class="demo-disclaimer">Never enter real banking details or upload sensitive documents in this demo.</p><button class="primary-button" type="submit">Save demo profile <span aria-hidden="true">→</span></button></div>
+              </form>
+            </section>
+            <aside class="card verification-steps-card"><span class="safety-card-icon">◈</span><p class="eyebrow">HOW VERIFICATION WILL WORK</p><h2>Getting road-ready.</h2><div class="verification-step"><span>1</span><div><strong>Share your details</strong><small>Contact and vehicle information.</small></div></div><div class="verification-step"><span>2</span><div><strong>Submit documents</strong><small>Licence and vehicle documents for review.</small></div></div><div class="verification-step"><span>3</span><div><strong>Admin reviews</strong><small>Your account becomes active after approval.</small></div></div><a href="support.html">Questions about verification? →</a></aside>
+          </div>
+        </div>
+        <footer class="page-footer"><span>© 2026 Raahi Mobility</span><span>Ride safe, ride easy <span class="footer-heart">♥</span></span></footer>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

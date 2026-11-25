@@ -1,0 +1,1165 @@
+:root {
+  color-scheme: dark;
+  --ink: #f0efe9;
+  --muted: #9a9aa2;
+  --line: #343439;
+  --purple: #edbd43;
+  --purple-dark: #d7a92f;
+  --green: #39c99a;
+}
+
+body {
+  background: #151517;
+  color: #efeff1;
+}
+
+/* Shared app workspaces */
+.app-shell {
+  background: #151517;
+  color: #efeff1;
+}
+.app-shell .sidebar,
+.app-shell .profile-button {
+  background: #1b1b1e;
+  border-color: #303034;
+}
+.app-shell .brand,
+.app-shell .breadcrumb strong,
+.app-shell h1,
+.app-shell h2,
+.app-shell .help-card strong,
+.app-shell .profile-copy strong {
+  color: #f0efe9;
+}
+.app-shell .brand-mark {
+  background: #edbd43;
+  color: #191919;
+}
+.app-shell .brand-period {
+  color: #edbd43;
+}
+.app-shell .nav-label,
+.app-shell .eyebrow,
+.app-shell .page-subtitle,
+.app-shell .breadcrumb,
+.app-shell .service-indicator,
+.app-shell .profile-copy small {
+  color: #96969f;
+}
+.app-shell .nav-link {
+  color: #aaaab1;
+}
+.app-shell .nav-link:hover,
+.app-shell .nav-link.active {
+  background: #302d22;
+  color: #f0c64d;
+}
+.app-shell .nav-count,
+.app-shell .icon-button,
+.app-shell .app-shell-card {
+  background: #242428;
+  border-color: #37373d;
+  color: #e7e6e1;
+}
+.app-shell .help-card {
+  background: #242428;
+  border-color: #37373d;
+}
+.app-shell .help-icon,
+.app-shell .step-number {
+  background: #393322;
+  color: #f0c64d;
+}
+.app-shell .text-button,
+.app-shell .location-pin,
+.app-shell .breadcrumb a,
+.app-shell .breadcrumb a:hover {
+  color: #f0c64d;
+}
+.app-shell .topbar,
+.app-shell .page-footer {
+  border-color: #303034;
+}
+.app-shell .crumb-slash {
+  color: #626269;
+}
+.app-shell .card,
+.app-shell .request-card,
+.app-shell .rider-request,
+.app-shell .profile-form-card,
+.app-shell .saved-places-card,
+.app-shell .account-safety-card,
+.app-shell .support-form-card,
+.app-shell .my-tickets-card,
+.app-shell .faq-card,
+.app-shell .rider-registration-card,
+.app-shell .verification-steps-card,
+.app-shell .rider-support-form-card,
+.app-shell .rider-ticket-card,
+.app-shell .rider-fairness-card,
+.app-shell .rider-help-topics {
+  background-color: #222226;
+  border-color: #36363b;
+  box-shadow: 0 8px 26px #00000012;
+}
+.app-shell .secondary-button,
+.app-shell .resolve-button,
+.app-shell .history-help,
+.app-shell .emergency-button,
+.app-shell .icon-button {
+  background: #29292e;
+  border-color: #3b3b42;
+  color: #dbdadd;
+}
+.app-shell .secondary-button:hover,
+.app-shell .resolve-button:hover,
+.app-shell .history-help:hover {
+  background: #343128;
+  border-color: #826a2d;
+}
+.app-shell .primary-button,
+.app-shell .button-primary {
+  background: #edbd43;
+  border-color: #edbd43;
+  box-shadow: 0 5px 16px #edbd4320;
+  color: #1b1a16;
+}
+.app-shell .primary-button:hover,
+.app-shell .button-primary:hover {
+  background: #f4cc60;
+}
+.app-shell .card-heading,
+.app-shell .section-title-row,
+.app-shell .booking-footer,
+.app-shell .trip-rider,
+.app-shell .ride-filters,
+.app-shell .history-item,
+.app-shell .saved-place,
+.app-shell .ride-passenger-actions,
+.app-shell .earnings-row,
+.app-shell .faq-card details,
+.app-shell .passenger-ticket {
+  border-color: #36363b;
+}
+.app-shell .small-muted,
+.app-shell .input-caption,
+.app-shell .fare-copy > span,
+.app-shell .fare-copy small,
+.app-shell .booking-note,
+.app-shell .map-caption,
+.app-shell .map-provider,
+.app-shell .stat-label,
+.app-shell .stat-secondary,
+.app-shell .demo-disclaimer,
+.app-shell .page-footer,
+.app-shell .ride-step-help,
+.app-shell .empty-rides,
+.app-shell .profile-summary p,
+.app-shell .profile-member,
+.app-shell .profile-form-card label,
+.app-shell .support-intro,
+.app-shell .trip-location small,
+.app-shell .trip-rider-copy small,
+.app-shell .trip-fare small,
+.app-shell .history-route-copy small,
+.app-shell .saved-place small,
+.app-shell .faq-card details p,
+.app-shell .rider-next-card > p:not(.eyebrow),
+.app-shell .rider-safety-card > p:not(.eyebrow),
+.app-shell .rider-fairness-card > p:not(.eyebrow),
+.app-shell .request-passenger-meta,
+.app-shell .no-requests p,
+.app-shell .earnings-summary-card > small,
+.app-shell .chart-summary span,
+.app-shell .earnings-row small,
+.app-shell .ride-passenger-profile small {
+  color: #9999a2;
+}
+.app-shell h2,
+.app-shell .ride-details strong,
+.app-shell .fare-copy > strong,
+.app-shell .quick-card strong,
+.app-shell .history-route-copy strong,
+.app-shell .history-result > strong,
+.app-shell .profile-form-card h2,
+.app-shell .saved-place strong,
+.app-shell .faq-card summary,
+.app-shell .trip-location strong,
+.app-shell .trip-rider-copy strong,
+.app-shell .trip-fare,
+.app-shell .active-route-row strong,
+.app-shell .ride-passenger-profile strong,
+.app-shell .rider-vehicle strong,
+.app-shell .request-fare > strong,
+.app-shell .request-passenger-meta strong,
+.app-shell .no-requests strong,
+.app-shell .stat-card > strong,
+.app-shell .earnings-summary-card > strong,
+.app-shell .chart-summary strong,
+.app-shell .payout-card strong,
+.app-shell .earnings-row strong {
+  color: #e9e8e4;
+}
+.app-shell input,
+.app-shell select,
+.app-shell textarea,
+.app-shell .location-input,
+.app-shell .ride-option,
+.app-shell .period-tabs {
+  background-color: #1b1b1f;
+  border-color: #3b3b41;
+  color: #e6e5e2;
+}
+.app-shell input::placeholder,
+.app-shell textarea::placeholder {
+  color: #777780;
+}
+.app-shell input:focus,
+.app-shell select:focus,
+.app-shell textarea:focus,
+.app-shell .location-input:focus-within {
+  border-color: #b99136;
+  box-shadow: 0 0 0 3px #edbd4314;
+}
+.app-shell .ride-option.selected {
+  background: #302d22;
+  border-color: #c29a35;
+  box-shadow: inset 0 0 0 1px #c29a35;
+}
+.app-shell .ride-details small,
+.app-shell .map-place,
+.app-shell .map-caption {
+  color: #b0b09f;
+}
+.app-shell .ride-confirmation,
+.app-shell .form-message,
+.app-shell .support-availability,
+.app-shell .online-toggle {
+  background: #1c302a;
+  border-color: #285445;
+  color: #66d6ac;
+}
+.app-shell .online-toggle.offline {
+  background: #29292e;
+  border-color: #3b3b42;
+  color: #a4a4ab;
+}
+.app-shell .promo-card {
+  background: linear-gradient(135deg, #393221, #25231e);
+  border: 1px solid #55472b;
+}
+.app-shell .promo-tag,
+.app-shell .promo-art,
+.app-shell .promo-copy b {
+  color: #f0c64d;
+}
+.app-shell .promo-copy > span:last-child {
+  color: #c4bfae;
+}
+.app-shell .quick-icon-purple,
+.app-shell .stat-violet,
+.app-shell .earnings-summary-icon,
+.app-shell .earnings-ride-icon,
+.app-shell .vehicle-mini,
+.app-shell .saved-icon,
+.app-shell .support-form-icon,
+.app-shell .ticket-lost {
+  background: #393322;
+  color: #f0c64d;
+}
+.app-shell .quick-icon-green,
+.app-shell .stat-blue,
+.app-shell .payout-icon,
+.app-shell .work-icon,
+.app-shell .no-requests > span,
+.app-shell .ticket-payment {
+  background: #1c302a;
+  color: #66d6ac;
+}
+.app-shell .stat-amber,
+.app-shell .average-summary-icon {
+  background: #3a3020;
+  color: #f0c64d;
+}
+.app-shell .stat-positive,
+.app-shell .earnings-up,
+.app-shell .earnings-amount {
+  color: #63d4aa;
+}
+.app-shell .ride-map,
+.app-shell .trip-map,
+.app-shell .active-map,
+.app-shell .map-art,
+.app-shell .mini-map {
+  background-color: #252a25;
+}
+.app-shell .map-block,
+.app-shell .trip-map-block,
+.app-shell .active-map-block,
+.app-shell .city-block,
+.app-shell .mini-map-road {
+  background: #343932;
+  border-color: #3b4239;
+}
+.app-shell .map-road,
+.app-shell .trip-map-road,
+.app-shell .active-map-road,
+.app-shell .city-road {
+  background: #41443d;
+}
+.app-shell .map-marker,
+.app-shell .map-rider,
+.app-shell .trip-map-pin,
+.app-shell .active-map-pin,
+.app-shell .active-map-rider {
+  background: #292a29;
+  border-color: #4a4b43;
+}
+.app-shell .map-bottom,
+.app-shell .map-topline {
+  color: #dbd9cd;
+}
+.app-shell .table-wrap {
+  scrollbar-color: #55514a #242428;
+}
+.app-shell table {
+  color: #deddd9;
+}
+.app-shell thead {
+  background: #29292d;
+}
+.app-shell th {
+  color: #b4b1a6;
+}
+.app-shell td {
+  border-color: #36363b;
+  color: #c8c7c3;
+}
+.app-shell td strong,
+.app-shell .table-person {
+  color: #e6e5e2;
+}
+.app-shell td small {
+  color: #9898a0;
+}
+.app-shell .status,
+.app-shell .priority,
+.app-shell .trend-pill,
+.app-shell .request-badge,
+.app-shell .ticket-count,
+.app-shell .demo-period-label {
+  background: #302d22;
+  color: #edc85f;
+}
+.app-shell .status-active,
+.app-shell .status-resolved,
+.app-shell .status-completed,
+.app-shell .status-done,
+.app-shell .priority-low,
+.app-shell .trend-green {
+  background: #1c302a;
+  color: #65d3aa;
+}
+.app-shell .status-blocked,
+.app-shell .status-cancelled,
+.app-shell .priority-high {
+  background: #382625;
+  color: #ef9b92;
+}
+.app-shell .status-investigating,
+.app-shell .status-review,
+.app-shell .status-in-progress,
+.app-shell .priority-medium {
+  background: #292b38;
+  color: #b6b6ef;
+}
+.app-shell .table-search,
+.app-shell .table-filter,
+.app-shell .rupee-input,
+.app-shell .additional-fares-grid select {
+  background: #1b1b1f;
+  border-color: #3b3b41;
+  color: #deddd9;
+}
+.app-shell .table-search input,
+.app-shell .rupee-input input {
+  color: #deddd9;
+}
+.app-shell .report-bars i,
+.app-shell .chart-bars i {
+  background: linear-gradient(180deg, #f2cf66, #c99d31);
+}
+.app-shell .report-bars > span:nth-child(2n) i,
+.app-shell .chart-bars > span:nth-child(2n) i {
+  background: linear-gradient(180deg, #e1bb50, #8e7027);
+}
+.app-shell .chart-gridline {
+  border-color: #414147;
+}
+.app-shell dialog,
+.app-shell .review-dialog {
+  background: #222226;
+  border: 1px solid #414147;
+  color: #efeff1;
+}
+.app-shell dialog::backdrop {
+  background: #070708b8;
+}
+.app-shell .review-parties,
+.app-shell .review-dialog-close button,
+.app-shell .notification-setting,
+.app-shell .setting-row {
+  background: #29292e;
+  border-color: #3b3b42;
+  color: #e4e3df;
+}
+.app-shell .review-dialog-context,
+.app-shell .review-parties small,
+.app-shell .settings-intro,
+.app-shell .admin-field,
+.app-shell .demo-disclaimer,
+.app-shell .notification-setting small,
+.app-shell .setting-row small {
+  color: #a0a0a8;
+}
+.app-shell .status-resolved,
+.app-shell .status-active,
+.app-shell .status-in-progress {
+  border-color: transparent;
+}
+
+/* Public home and event booking */
+body:not(.app-shell) {
+  background: #151517;
+  color: #efeff1;
+}
+.site-header {
+  background: #19191bed;
+  border-color: #303034;
+}
+.site-header .brand,
+.hero h1,
+.section-heading h2,
+.about-copy h2,
+.contact-copy h2,
+.contact-form h3,
+.event-promo h2 {
+  color: #f0efe9;
+}
+.site-header .brand-mark {
+  background: #edbd43;
+  color: #1b1a16;
+}
+.site-header .brand-period,
+.hero h1 span,
+.section-heading h2 span,
+.about-copy h2 span,
+.contact-copy h2 span,
+.event-promo h2 span {
+  color: #edbd43;
+}
+.site-nav a,
+.login-button,
+.hero-description,
+.section-heading > p,
+.about-copy > p:not(.eyebrow),
+.contact-copy > p:not(.eyebrow),
+.contact-form > p,
+.text-link {
+  color: #a5a5ad;
+}
+.site-nav a:hover,
+.login-button:hover,
+.text-link:hover {
+  color: #f0c64d;
+}
+.button-primary {
+  background: #edbd43;
+  border-color: #edbd43;
+  box-shadow: 0 6px 18px #edbd431c;
+  color: #1b1a16;
+}
+.button-primary:hover {
+  background: #f4cc60;
+}
+.button-outline {
+  background: #222226;
+  border-color: #414147;
+  color: #e6e5e2;
+}
+.button-outline:hover {
+  background: #2b2b30;
+  border-color: #b18b33;
+}
+.hero-visual {
+  background: #222321;
+  border-color: #393a35;
+}
+.hero-visual::before {
+  background: radial-gradient(ellipse at 68% 47%, #f0c34b16 0, transparent 49%);
+}
+.visual-orbit {
+  border-color: #414239;
+}
+.city-block {
+  background: #30342f;
+  border-color: #3b4039;
+}
+.city-road {
+  background: #494a42;
+}
+.hero-route .route-shadow {
+  stroke: #1b1c19;
+}
+.hero-route .route-line {
+  stroke: #edbd43;
+}
+.hero-pin {
+  background: #2b2a25;
+}
+.hero-pin span {
+  color: #f0c64d;
+}
+.ride-found,
+.nearby-card {
+  background: #242428;
+  border-color: #3a3a40;
+}
+.floating-card strong {
+  color: #ededea;
+}
+.floating-card small {
+  color: #a0a0a8;
+}
+.nearby-icon,
+.play-icon {
+  background: #393322;
+  color: #f0c64d;
+}
+.trust-strip {
+  background: #1b1b1e;
+  border-color: #303034;
+}
+.trust-inner {
+  color: #b0b0b5;
+}
+.trust-inner > span,
+.ride-card-number {
+  color: #a3a3aa;
+}
+.trust-inner b,
+.eyebrow-mark {
+  color: #edbd43;
+}
+.section-heading h2,
+.about-copy h2,
+.contact-copy h2 {
+  color: #f0efe9;
+}
+.ride-card,
+.ride-bike,
+.ride-auto,
+.ride-cab,
+.ride-erickshaw,
+.ride-pickup {
+  background: #222226;
+  border-color: #36363b;
+}
+.ride-card:hover {
+  box-shadow: 0 14px 32px #00000050;
+}
+.ride-card-footer h3 {
+  color: #eeeDE8;
+}
+.ride-card-footer p,
+.availability-note {
+  color: #9999a2;
+}
+.vehicle-art::before {
+  background: #ffffff0a;
+}
+.vehicle-wheel {
+  border-color: #66645d;
+}
+.about-section {
+  background: #1b1b1e;
+  border-color: #303034;
+}
+.about-art {
+  background: #232321;
+}
+.about-circle {
+  border-color: #464236;
+}
+.about-caption,
+.about-stamp,
+.about-copy .text-link {
+  color: #d8d6cd;
+}
+.how-section {
+  color: #eee;
+}
+.step-card,
+.contact-form {
+  background: #222226;
+  border-color: #36363b;
+  color: #efeff1;
+}
+.step-card h3 {
+  color: #e9e8e4;
+}
+.step-card p {
+  color: #a0a0a8;
+}
+.step-number,
+.step-illustration {
+  color: #edbd43;
+}
+.contact-section {
+  background: #1b1b1e;
+  border-color: #303034;
+}
+.contact-detail-icon {
+  background: #393322;
+  color: #f0c64d;
+}
+.contact-detail small {
+  color: #9898a0;
+}
+.contact-detail strong {
+  color: #e9e8e4;
+}
+.contact-form > label {
+  color: #d4d3cf;
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea,
+.auth-dialog input {
+  background: #19191c;
+  border-color: #3b3b41;
+  color: #e6e5e2;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder,
+.auth-dialog input::placeholder {
+  color: #777780;
+}
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus,
+.auth-dialog input:focus {
+  border-color: #b99136;
+  box-shadow: 0 0 0 3px #edbd4314;
+}
+.site-footer {
+  background: #151517;
+  border-color: #303034;
+}
+.site-footer .brand,
+.site-footer .footer-links strong {
+  color: #e7e6e1;
+}
+.footer-brand p,
+.footer-links a,
+.footer-links button,
+.footer-bottom {
+  color: #9999a2;
+}
+.footer-links a:hover,
+.footer-links button:hover {
+  color: #f0c64d;
+}
+.footer-bottom {
+  border-color: #303034;
+}
+.event-promo {
+  background: #222226;
+  border-color: #39362b;
+}
+.event-promo > div:first-child > p:not(.eyebrow) {
+  color: #a5a5ad;
+}
+.event-promo-art {
+  background: linear-gradient(145deg, #443a23, #302a1d);
+  border: 1px solid #62512d;
+}
+.event-promo-art > span {
+  color: #f0c64d;
+}
+.event-promo-art small {
+  color: #c8c1ad;
+}
+.auth-dialog {
+  background: #222226;
+  border-color: #414147;
+  color: #efeff1;
+}
+.auth-dialog h2,
+.auth-dialog .auth-description {
+  color: #efeff1;
+}
+.auth-dialog .auth-tabs {
+  background: #19191c;
+}
+.auth-dialog .auth-tab.active {
+  background: #302d22;
+  color: #f0c64d;
+}
+
+.event-booking-page .event-header {
+  background: #19191bed;
+  border-color: #303034;
+}
+.event-booking-page .event-shell {
+  color: #efeff1;
+}
+.event-booking-page .event-intro h1,
+.event-booking-page .event-card-heading h2,
+.event-booking-page .event-side h2,
+.event-booking-page .my-event-requests h2,
+.event-booking-page .customer-event-top h3 {
+  color: #f0efe9;
+}
+.event-booking-page .event-intro h1 span,
+.event-booking-page .event-intro .eyebrow,
+.event-booking-page .event-card-heading .eyebrow,
+.event-booking-page .event-side .eyebrow {
+  color: #f0c64d;
+}
+.event-booking-page .event-intro > p:not(.eyebrow),
+.event-booking-page .event-form-note,
+.event-booking-page .event-field-help,
+.event-booking-page .event-demo-note,
+.event-booking-page .event-process span {
+  color: #a3a3ab;
+}
+.event-booking-page .event-process b,
+.event-booking-page .event-side-icon,
+.event-booking-page .quote-step > span {
+  background: #393322;
+  color: #f0c64d;
+}
+.event-booking-page .event-card,
+.event-booking-page .customer-event-card {
+  background: #222226;
+  border-color: #36363b;
+  box-shadow: 0 8px 26px #00000012;
+}
+.event-booking-page .event-card-heading .sample-indicator,
+.event-booking-page .sample-indicator {
+  background: #393322;
+  color: #e6c45b;
+}
+.event-booking-page .event-form fieldset {
+  border-color: #38383d;
+}
+.event-booking-page .event-form legend,
+.event-booking-page .event-field {
+  color: #d7d6d1;
+}
+.event-booking-page .event-field input,
+.event-booking-page .event-field select,
+.event-booking-page .event-field textarea {
+  background: #19191c;
+  border-color: #3b3b41;
+  color: #e6e5e2;
+}
+.event-booking-page .event-field input::placeholder,
+.event-booking-page .event-field textarea::placeholder {
+  color: #777780;
+}
+.event-booking-page .event-field input:focus,
+.event-booking-page .event-field select:focus,
+.event-booking-page .event-field textarea:focus {
+  border-color: #b99136;
+  box-shadow: 0 0 0 3px #edbd4314;
+}
+.event-booking-page .vehicle-request-row {
+  background: #1d1d20;
+  border-color: #39393e;
+}
+.event-booking-page .remove-vehicle {
+  background: #29292e;
+  border-color: #414147;
+  color: #d3d2cc;
+}
+.event-booking-page .add-vehicle-button,
+.event-booking-page .event-status-legend .text-link {
+  color: #f0c64d;
+}
+.event-booking-page .quote-step,
+.event-booking-page .event-footer {
+  border-color: #38383d;
+}
+.event-booking-page .quote-step strong,
+.event-booking-page .customer-event-details strong {
+  color: #e7e6e1;
+}
+.event-booking-page .quote-step small,
+.event-booking-page .event-side > p:not(.eyebrow),
+.event-booking-page .customer-event-details,
+.event-booking-page .event-vehicle-list {
+  color: #a0a0a8;
+}
+.event-booking-page .event-status-pill {
+  background: #393322;
+  color: #edc85f;
+}
+.event-booking-page .event-status-pill.status-booking-confirmed,
+.event-booking-page .event-status-pill.status-completed {
+  background: #1c302a;
+  color: #65d3aa;
+}
+.event-booking-page .event-status-pill.status-cancelled {
+  background: #382625;
+  color: #ef9b92;
+}
+.event-booking-page .event-status-pill.status-under-review,
+.event-booking-page .event-status-pill.status-quotation-sent,
+.event-booking-page .event-status-pill.status-waiting-confirmation {
+  background: #292b38;
+  color: #b6b6ef;
+}
+.event-booking-page .event-quote-box {
+  background: #302d22;
+  border-color: #55472b;
+}
+.event-booking-page .event-quote-box strong {
+  color: #f0c64d;
+}
+.event-booking-page .event-quote-box p {
+  color: #c6c1b2;
+}
+.event-booking-page .event-customer-actions button {
+  background: #242428;
+  border-color: #48443a;
+  color: #f0c64d;
+}
+.event-booking-page .empty-event-state {
+  background: #222226;
+  border-color: #3e3e44;
+  color: #a0a0a8;
+}
+.event-booking-page .event-footer {
+  color: #9999a2;
+}
+.event-booking-page .event-footer a {
+  color: #f0c64d;
+}
+
+@media (max-width: 820px) {
+  .app-shell .sidebar {
+    background: #19191c;
+    border-bottom-color: #303034;
+  }
+}
+
+body .app-shell .rider-safety-card,
+body .app-shell .ride-check-card,
+body .app-shell .account-safety-card,
+body .app-shell .emergency-card {
+  background: #26262a;
+  border-color: #3a3a40;
+}
+body .app-shell .admin-count-pill,
+body .app-shell .sample-indicator,
+body .app-shell .ticket-count,
+body .app-shell .demo-period-label {
+  background: #393322;
+  color: #edc85f;
+}
+body .app-shell .admin-stat > div > strong,
+body .app-shell .summary-mini > strong,
+body .app-shell .report-stat > strong,
+body .app-shell .earnings-summary-card > strong {
+  color: #f0efe9;
+}
+body .app-shell .admin-stat > small,
+body .app-shell .summary-mini .stat-label,
+body .app-shell .report-stat > small {
+  color: #a0a0a8;
+}
+body .app-shell .table-action,
+body .app-shell .review-dialog-close button,
+body .app-shell .rider-review-dialog button,
+body .app-shell .table-filter,
+body .app-shell .period-tab.active {
+  background: #29292e;
+  border-color: #414147;
+  color: #edc85f;
+}
+body .app-shell .period-tabs {
+  background: #19191c;
+}
+body .app-shell .table-action:hover,
+body .app-shell .period-tab.active {
+  background: #393322;
+}
+body .app-shell .section-title-row .text-button,
+body .app-shell .admin-shortcut > b,
+body .app-shell .admin-shortcut > strong {
+  color: #edc85f;
+}
+body .app-shell .review-dialog-close button:hover {
+  background: #393322;
+}
+body .app-shell .report-download-card {
+  background: #222226;
+  border-color: #36363b;
+}
+
+body:not(.app-shell) .site-header {
+  background: #19191bed;
+  border-bottom-color: #303034;
+}
+body:not(.app-shell) .site-header .brand,
+body:not(.app-shell) .hero h1,
+body:not(.app-shell) .section-heading h2,
+body:not(.app-shell) .about-copy h2,
+body:not(.app-shell) .contact-copy h2,
+body:not(.app-shell) .contact-form h3,
+body:not(.app-shell) .event-promo h2 {
+  color: #f0efe9;
+}
+body:not(.app-shell) .site-header .brand-mark {
+  background: #edbd43;
+  color: #1b1a16;
+}
+body:not(.app-shell) .site-header .brand-period,
+body:not(.app-shell) .hero h1 span,
+body:not(.app-shell) .event-promo h2 span {
+  color: #edbd43;
+}
+body:not(.app-shell) .site-nav a,
+body:not(.app-shell) .login-button,
+body:not(.app-shell) .hero-description,
+body:not(.app-shell) .section-heading > p,
+body:not(.app-shell) .about-copy > p:not(.eyebrow),
+body:not(.app-shell) .contact-copy > p:not(.eyebrow),
+body:not(.app-shell) .contact-form > p,
+body:not(.app-shell) .text-link {
+  color: #a5a5ad;
+}
+body:not(.app-shell) .site-nav a:hover,
+body:not(.app-shell) .login-button:hover,
+body:not(.app-shell) .text-link:hover {
+  color: #f0c64d;
+}
+body:not(.app-shell) .button-primary {
+  background: #edbd43;
+  border-color: #edbd43;
+  box-shadow: 0 6px 18px #edbd431c;
+  color: #1b1a16;
+}
+body:not(.app-shell) .button-outline {
+  background: #222226;
+  border-color: #414147;
+  color: #e6e5e2;
+}
+body:not(.app-shell) .hero-visual {
+  background: #222321;
+  border-color: #393a35;
+}
+body:not(.app-shell) .hero-visual::before {
+  background: radial-gradient(ellipse at 68% 47%, #f0c34b16 0, transparent 49%);
+}
+body:not(.app-shell) .visual-orbit {
+  border-color: #414239;
+}
+body:not(.app-shell) .city-block {
+  background: #30342f;
+  border-color: #3b4039;
+}
+body:not(.app-shell) .city-road {
+  background: #494a42;
+}
+body:not(.app-shell) .hero-route .route-shadow {
+  stroke: #1b1c19;
+}
+body:not(.app-shell) .hero-route .route-line {
+  stroke: #edbd43;
+}
+body:not(.app-shell) .hero-pin {
+  background: #2b2a25;
+}
+body:not(.app-shell) .hero-pin span {
+  color: #f0c64d;
+}
+body:not(.app-shell) .ride-found,
+body:not(.app-shell) .nearby-card {
+  background: #242428;
+  border-color: #3a3a40;
+}
+body:not(.app-shell) .floating-card strong {
+  color: #ededea;
+}
+body:not(.app-shell) .floating-card small {
+  color: #a0a0a8;
+}
+body:not(.app-shell) .nearby-icon,
+body:not(.app-shell) .play-icon {
+  background: #393322;
+  color: #f0c64d;
+}
+body:not(.app-shell) .trust-strip {
+  background: #1b1b1e;
+  border-color: #303034;
+}
+body:not(.app-shell) .trust-inner {
+  color: #b0b0b5;
+}
+body:not(.app-shell) .trust-inner > span,
+body:not(.app-shell) .ride-card-number {
+  color: #a3a3aa;
+}
+body:not(.app-shell) .trust-inner b,
+body:not(.app-shell) .eyebrow-mark {
+  color: #edbd43;
+}
+body:not(.app-shell) .ride-card,
+body:not(.app-shell) .ride-bike,
+body:not(.app-shell) .ride-auto,
+body:not(.app-shell) .ride-cab,
+body:not(.app-shell) .ride-erickshaw,
+body:not(.app-shell) .ride-pickup {
+  background: #222226;
+  border-color: #36363b;
+}
+body:not(.app-shell) .ride-card-footer h3 {
+  color: #eeeDE8;
+}
+body:not(.app-shell) .ride-card-footer p,
+body:not(.app-shell) .availability-note {
+  color: #9999a2;
+}
+body:not(.app-shell) .vehicle-art::before {
+  background: #ffffff0a;
+}
+body:not(.app-shell) .about-section,
+body:not(.app-shell) .contact-section {
+  background: #1b1b1e;
+  border-color: #303034;
+}
+body:not(.app-shell) .about-art {
+  background: #232321;
+}
+body:not(.app-shell) .about-circle {
+  border-color: #464236;
+}
+body:not(.app-shell) .about-caption,
+body:not(.app-shell) .about-stamp,
+body:not(.app-shell) .about-copy .text-link {
+  color: #d8d6cd;
+}
+body:not(.app-shell) .step-card,
+body:not(.app-shell) .contact-form {
+  background: #222226;
+  border-color: #36363b;
+  color: #efeff1;
+}
+body:not(.app-shell) .step-card h3 {
+  color: #e9e8e4;
+}
+body:not(.app-shell) .step-card p {
+  color: #a0a0a8;
+}
+body:not(.app-shell) .step-number {
+  color: #edbd43;
+}
+body:not(.app-shell) .contact-detail-icon {
+  background: #393322;
+  color: #f0c64d;
+}
+body:not(.app-shell) .contact-detail small {
+  color: #9898a0;
+}
+body:not(.app-shell) .contact-detail strong {
+  color: #e9e8e4;
+}
+body:not(.app-shell) .contact-form > label {
+  color: #d4d3cf;
+}
+body:not(.app-shell) .contact-form input,
+body:not(.app-shell) .contact-form select,
+body:not(.app-shell) .contact-form textarea,
+body:not(.app-shell) .auth-dialog input {
+  background: #19191c;
+  border-color: #3b3b41;
+  color: #e6e5e2;
+}
+body:not(.app-shell) .site-footer {
+  background: #151517;
+  border-color: #303034;
+}
+body:not(.app-shell) .site-footer .brand,
+body:not(.app-shell) .site-footer .footer-links strong {
+  color: #e7e6e1;
+}
+body:not(.app-shell) .footer-brand p,
+body:not(.app-shell) .footer-links a,
+body:not(.app-shell) .footer-links button,
+body:not(.app-shell) .footer-bottom {
+  color: #9999a2;
+}
+body:not(.app-shell) .event-promo {
+  background: #222226;
+  border-color: #39362b;
+}
+body:not(.app-shell) .event-promo > div:first-child > p:not(.eyebrow) {
+  color: #a5a5ad;
+}
+body:not(.app-shell) .event-promo-art {
+  background: linear-gradient(145deg, #443a23, #302a1d);
+  border-color: #62512d;
+}
+body:not(.app-shell) .event-promo-art > span {
+  color: #f0c64d;
+}
+body:not(.app-shell) .event-promo-art small {
+  color: #c8c1ad;
+}
+body:not(.app-shell) .auth-dialog {
+  background: #222226;
+  border-color: #414147;
+  color: #efeff1;
+}
+body:not(.app-shell) .event-booking-page .event-intro h1,
+body:not(.app-shell) .event-booking-page .event-card-heading h2,
+body:not(.app-shell) .event-booking-page .event-side h2,
+body:not(.app-shell) .event-booking-page .my-event-requests h2,
+body:not(.app-shell) .event-booking-page .customer-event-top h3 {
+  color: #f0efe9;
+}
+body:not(.app-shell) .event-booking-page .event-intro h1 span,
+body:not(.app-shell) .event-booking-page .event-intro .eyebrow,
+body:not(.app-shell) .event-booking-page .event-card-heading .eyebrow,
+body:not(.app-shell) .event-booking-page .event-side .eyebrow {
+  color: #f0c64d;
+}
+body:not(.app-shell) .event-booking-page .event-card,
+body:not(.app-shell) .event-booking-page .customer-event-card,
+body:not(.app-shell) .event-booking-page .empty-event-state {
+  background: #222226;
+  border-color: #36363b;
+  color: #a0a0a8;
+}
+body:not(.app-shell) .event-booking-page .event-field input,
+body:not(.app-shell) .event-booking-page .event-field select,
+body:not(.app-shell) .event-booking-page .event-field textarea {
+  background: #19191c;
+  border-color: #3b3b41;
+  color: #e6e5e2;
+}
+body:not(.app-shell) .event-booking-page .event-quote-box {
+  background: #302d22;
+  border-color: #55472b;
+}
+body:not(.app-shell) .event-booking-page .event-quote-box strong {
+  color: #f0c64d;
+}
+body:not(.app-shell) .event-booking-page .event-customer-actions button {
+  background: #242428;
+  border-color: #48443a;
+  color: #f0c64d;
+}

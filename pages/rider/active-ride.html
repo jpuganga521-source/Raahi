@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f7fb" />
+    <title>Active ride — Raahi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/rider.css" />
+    <script src="../../js/rider.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Rider navigation">
+        <a class="brand" href="../../index.html" aria-label="Raahi home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M7 23.5 13.2 8l5.2 11.4 3.1-7.2L27 23.5" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7" cy="24" r="2" fill="currentColor"/><circle cx="27" cy="24" r="2" fill="currentColor"/></svg></span><span>raahi<span class="brand-period">.</span></span></a>
+        <p class="nav-label">RIDER WORKSPACE</p>
+        <nav class="primary-nav">
+          <a class="nav-link" href="dashboard.html"><span class="nav-icon">▦</span> Overview</a><a class="nav-link" href="requests.html"><span class="nav-icon">⌖</span> Ride requests <span class="nav-count">2</span></a><a class="nav-link active" href="active-ride.html" aria-current="page"><span class="nav-icon">↗</span> Active ride</a><a class="nav-link" href="earnings.html"><span class="nav-icon">₹</span> Earnings</a><a class="nav-link" href="support.html"><span class="nav-icon">?</span> Rider support</a>
+        </nav>
+        <div class="sidebar-spacer"></div><div class="help-card"><div class="help-icon">?</div><strong>On the road?</strong><p>Support is here if you need a hand.</p><a class="text-button" href="support.html">Contact support <span>→</span></a></div>
+        <a class="profile-button profile-link" href="registration.html"><span class="avatar rider-avatar">VS</span><span class="profile-copy"><strong>Vikram Singh</strong><small>Verified rider</small></span></a>
+      </aside>
+      <main class="main-content">
+        <header class="topbar"><div class="breadcrumb"><a href="dashboard.html">Rider workspace</a><span class="crumb-slash">/</span><strong>Active ride</strong></div><div class="topbar-actions"><span class="service-indicator"><span class="live-dot"></span> All systems normal</span><span class="avatar rider-avatar top-avatar">VS</span></div></header>
+        <div class="view active rider-page">
+          <div class="page-heading"><div><p class="eyebrow">YOUR CURRENT TRIP</p><h1>Active ride</h1><p class="page-subtitle">Trip #R-891 · Passenger details below are sample data.</p></div><a class="secondary-button" href="support.html">Get support</a></div>
+          <div class="active-ride-layout">
+            <section class="card active-ride-card">
+              <div class="section-title-row"><div><p class="eyebrow">RIDE STATUS</p><h2 id="ride-status-title">Head to pickup</h2></div><span class="status status-in-progress" id="ride-status-pill"><span class="status-dot"></span><span id="ride-status-label">Pickup next</span></span></div>
+              <div class="active-map"><div class="active-map-block active-map-a"></div><div class="active-map-block active-map-b"></div><div class="active-map-block active-map-c"></div><div class="active-map-road active-road-a"></div><div class="active-map-road active-road-b"></div><div class="active-map-road active-road-c"></div><svg viewBox="0 0 520 340" preserveAspectRatio="none" aria-hidden="true"><path class="active-map-route" d="M78 266 C140 243 159 184 218 192 S303 244 338 168 S405 106 456 78"/></svg><span class="active-map-pin active-pickup">⌖</span><span class="active-map-pin active-dropoff">⌖</span><span class="active-map-rider">🏍️</span><span class="active-map-label"><span class="live-dot"></span> Map preview · Not live navigation</span></div>
+              <div class="active-ride-route"><div class="active-route-row"><span class="route-origin"></span><span><small>PICKUP</small><strong>Rajiv Chowk Metro Gate 4</strong></span><span class="route-eta" id="pickup-eta">About 4 min</span></div><div class="active-route-line"></div><div class="active-route-row"><span class="route-destination"></span><span><small>DROP-OFF</small><strong>India Gate, New Delhi</strong></span><span class="route-eta">4.8 km</span></div></div>
+              <button class="primary-button ride-step-button" id="ride-step-button" type="button">I've arrived at pickup <span aria-hidden="true">→</span></button>
+              <p class="ride-step-help" id="ride-step-help">Once the passenger is safely with you, confirm pickup to start the ride.</p>
+            </section>
+            <aside class="active-ride-aside">
+              <section class="card ride-passenger-card"><p class="eyebrow">PASSENGER</p><div class="ride-passenger-profile"><span class="avatar avatar-passenger">MK</span><span><strong>Meera Kapoor</strong><small>★ 4.8 · 12 rides</small></span><span class="passenger-verification">✓ Verified</span></div><div class="ride-passenger-actions"><button class="secondary-button" type="button" data-rider-action="call">Call passenger</button><button class="secondary-button" type="button" data-rider-action="message">Message</button></div></section>
+              <section class="card ride-check-card"><span class="safety-card-icon">⌑</span><p class="eyebrow">A QUICK REMINDER</p><h2>Keep every ride safe.</h2><ul><li>Confirm your passenger before starting.</li><li>Follow traffic rules and use your helmet.</li><li>Use support if something doesn't feel right.</li></ul><a href="support.html">Need assistance? Contact support →</a></section>
+            </aside>
+          </div>
+          <p class="demo-disclaimer">All trip status, contact controls and map details are a frontend demo. No live location is shared.</p>
+        </div>
+        <footer class="page-footer"><span>© 2026 Raahi Mobility</span><span>Ride safe, ride easy <span class="footer-heart">♥</span></span></footer>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
